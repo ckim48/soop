@@ -970,7 +970,7 @@ section,
 .about .about-img {
   position: relative;
   margin: 60px 0 0 60px;
-  width: 55%;
+  width: 65%;
 }
 
 .about .about-img:before {
@@ -1478,6 +1478,32 @@ section,
 .team .team-member:hover .social {
   opacity: 1;
 }
+.team .team-member .member-img {
+  border-radius: 8px;
+  overflow: hidden;
+  width: 100%;
+  aspect-ratio: 1 / 1; /* Make it always square */
+  background-color: #f8f8f8; /* fallback background */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.team .team-member .member-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Important: crop to fill square without stretching */
+}
+.team .team-member {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+.team .team-member .member-img .move-down-img {
+  object-position: center 20%;
+}
+
 
 /*--------------------------------------------------------------
 # Contact Section
