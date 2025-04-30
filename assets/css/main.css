@@ -220,7 +220,14 @@ h6 {
   color: var(--contrast-color);
   background: color-mix(in srgb, var(--accent-color), transparent 15%);
 }
-
+@media (max-width: 800px) {
+.navmenu ul {
+  align-items: right;
+}
+.btn-getstarted{
+  display: none;
+}
+}
 @media (max-width: 1200px) {
   .header .logo {
     order: 1;
