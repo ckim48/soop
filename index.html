@@ -35,12 +35,45 @@
 }
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-  background-color: #555; /* dark gray */
-  border-radius: 50%; /* optional: make it round */
-  width: 40px; /* optional: make it bigger */
+  background-color: #555;
+  border-radius: 50%; 
+  width: 40px; 
   height: 40px;
-  background-size: 60% 60%; /* slightly smaller icon inside */
+  background-size: 60% 60%; 
 }
+.feature-card {
+  background: linear-gradient(145deg, #fff, #fdf3f7);
+  transition: all 0.3s ease;
+  padding: 30px 20px;
+}
+.feature-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+.icon-box {
+  width: 70px;
+  height: 70px;
+  background: linear-gradient(to bottom right, #ec4899, #f472b6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  box-shadow: 0 4px 20px rgba(236, 72, 153, 0.3);
+}
+
+.icon-box.bg-blue {
+  background: linear-gradient(to bottom right, #3b82f6, #60a5fa);
+  box-shadow: 0 4px 20px rgba(59, 130, 246, 0.3);
+}
+
+.icon-box.bg-yellow {
+  background: linear-gradient(to bottom right, #facc15, #fde68a);
+  box-shadow: 0 4px 20px rgba(250, 204, 21, 0.3);
+}
+
+
+
 
 </style>
   <!-- Main CSS File -->
@@ -127,11 +160,12 @@
       <div class="col-lg-6">
         <h3 class="fw-bold">Bridging the Emotional Support Gap for LGBTQ+ Youth</h3>
         <p>Soop offers a secure, anonymous environment where individuals can confidently manage their emotional health, overcome stigma, and navigate identity issues. With an empathy-driven design, we ensure that those who need support the most receive it in a personalized, accessible way.</p>
-        <ul class="list-unstyled">
+        <ul class="list-unstyled mb-4">
           <li class="mb-2"><i class="bi bi-check-circle-fill me-2"></i>AI-powered emotional support tailored to individual needs</li>
           <li class="mb-2"><i class="bi bi-check-circle-fill me-2"></i>Focused on LGBTQ+ youth in North America and Asia</li>
           <li><i class="bi bi-check-circle-fill me-2"></i>Anonymous and secure environment to express and heal</li>
         </ul>
+          <a href="https://www.youtube.com/watch?v=g_H9Enfzw-I" class="btn-get-started glightbox">Watch Video</a>
       </div>
     </div>
   </div>
@@ -156,6 +190,52 @@
         </div>
       </div>
     </section>
+
+  <section id="features" class="features section">
+  <div class="container" data-aos="fade-up">
+    <div class="section-title text-center">
+      <h2>What Makes Soop Special</h2>
+      <p class="text-muted">Empathy-driven technology crafted for safe, healing conversations.</p>
+    </div>
+
+    <div class="row justify-content-center g-4">
+      <!-- Feature Card 1 -->
+      <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="100">
+        <div class="card feature-card h-100 text-center border-0 shadow-sm rounded-4">
+          <div class="icon-box mx-auto mb-3">
+            <i class="bi bi-chat-heart-fill fs-2 text-white"></i>
+          </div>
+          <h5 class="fw-bold">Compassionate AI Chat</h5>
+          <p class="text-muted">Our AI listens with empathy, supporting you through judgment-free, anonymous conversation.</p>
+        </div>
+      </div>
+
+      <!-- Feature Card 2 -->
+      <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="200">
+        <div class="card feature-card h-100 text-center border-0 shadow-sm rounded-4">
+          <div class="icon-box mx-auto mb-3 bg-blue">
+            <i class="bi bi-shield-lock-fill fs-2 text-white"></i>
+          </div>
+          <h5 class="fw-bold">Safe & Private Space</h5>
+          <p class="text-muted">No sign-ups or tracking. Your identity is protected while you reflect, vent, and grow.</p>
+        </div>
+      </div>
+
+      <!-- Feature Card 3 -->
+      <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="300">
+        <div class="card feature-card h-100 text-center border-0 shadow-sm rounded-4">
+          <div class="icon-box mx-auto mb-3 bg-yellow">
+            <i class="bi bi-stars fs-2 text-white"></i>
+          </div>
+          <h5 class="fw-bold">Emotional Reflection Tools</h5>
+          <p class="text-muted">Understand tone and emotion in your words with thoughtful suggestions for kinder expression.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
 
     <!-- Team Section -->
     <section id="team" class="team section">

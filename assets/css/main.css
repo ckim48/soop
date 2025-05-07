@@ -793,7 +793,7 @@ section,
 }
 
 .section-title h2 {
-  font-size: 48px;
+  font-size: 42px;
   font-weight: 300;
   margin-bottom: 15px;
 }
@@ -849,6 +849,27 @@ section,
   color: var(--contrast-color);
   background: color-mix(in srgb, var(--accent-color), transparent 15%);
 }
+
+
+.about .btn-get-started {
+  color: var(--contrast-color);
+  background: var(--accent-color);
+  font-family: var(--heading-font);
+  font-weight: 400;
+  font-size: 15px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 28px;
+  border-radius: 4px;
+  transition: 0.5s;
+}
+
+.about .btn-get-started:hover {
+  color: var(--contrast-color);
+  background: color-mix(in srgb, var(--accent-color), transparent 15%);
+}
+
+
 
 .hero .btn-watch-video {
   font-size: 16px;
