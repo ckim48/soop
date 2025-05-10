@@ -220,6 +220,8 @@ h6 {
   color: var(--contrast-color);
   background: color-mix(in srgb, var(--accent-color), transparent 15%);
 }
+
+
 @media (max-width: 800px) {
 .navmenu ul {
   align-items: right;
@@ -228,6 +230,7 @@ h6 {
   display: none;
 }
 }
+
 @media (max-width: 1200px) {
   .header .logo {
     order: 1;
@@ -845,6 +848,25 @@ section,
   transition: 0.5s;
 }
 
+.hero .btn-watch-video:hover {
+  color: var(--contrast-color);
+  background: color-mix(in srgb, var(--accent-color), transparent 15%);
+}
+
+
+.hero .btn-watch-video{
+  color: var(--contrast-color);
+  background: #e186de;
+  font-family: var(--heading-font);
+  font-weight: 400;
+  font-size: 15px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 4px;
+  transition: 0.5s;
+}
+
 .hero .btn-get-started:hover {
   color: var(--contrast-color);
   background: color-mix(in srgb, var(--accent-color), transparent 15%);
@@ -871,25 +893,25 @@ section,
 
 
 
-.hero .btn-watch-video {
+/*.hero .btn-watch-video {
   font-size: 16px;
   transition: 0.5s;
   margin-left: 25px;
   color: var(--default-color);
   font-weight: 500;
 }
-
+*/
 .hero .btn-watch-video i {
-  color: var(--accent-color);
-  font-size: 32px;
+  color: white;
+  font-size: 22px;
   transition: 0.3s;
   line-height: 0;
   margin-right: 8px;
 }
 
-.hero .btn-watch-video:hover {
+/*.hero .btn-watch-video:hover {
   color: var(--accent-color);
-}
+}*/
 
 .hero .btn-watch-video:hover i {
   color: color-mix(in srgb, var(--accent-color), transparent 15%);
