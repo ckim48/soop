@@ -395,19 +395,24 @@ VANTA.FOG({
   (function() {
     emailjs.init("27QgP0uQsaxgso0ls");
   })();
-</script>
-<script>
+
   document.getElementById("subscribe-form").addEventListener("submit", function(e) {
     e.preventDefault();
-    emailjs.sendForm('service_rglla1a', 'template_19ra51l', this)
-      .then(() => {
-        alert("Subscription successful!");
-        this.reset();
-      }, (error) => {
-        alert("Subscription failed: " + JSON.stringify(error));
-      });
+
+    const email = this.subscriber_email.value;
+
+    emailjs.send('service_rglla1a', 'template_19ra51l', {
+      subscriber_email: email,
+      to_email: 'soopnotsoup1@gmail.com'
+    }).then(() => {
+      alert("Subscription successful!");
+      this.reset();
+    }, (error) => {
+      alert("Subscription failed: " + JSON.stringify(error));
+    });
   });
 </script>
+
 
 
 </body>
