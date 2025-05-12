@@ -202,7 +202,9 @@ h6 {
   padding: 0;
   margin: 0;
 }
-
+.onlymobile{
+  display: none;
+}
 
 .header .btn-getstarted,
 .header .btn-getstarted:focus {
@@ -387,8 +389,22 @@ h6 {
   }
 }
 
+  .onlydsektop{
+  display: block;
+}
+
+@media (max-width: 1299px) {
+
+}
 /* Mobile Navigation */
 @media (max-width: 1199px) {
+  .onlymobile{
+  display: block;
+}
+
+  .onlydesktop{
+  display: none;
+}
   .mobile-nav-toggle {
     color: var(--nav-color);
     font-size: 28px;
